@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Happy Valentine's Day, My Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background music: add your song as music.mpeg (or music.mp3) in the Valentine folder. Click the ♪ button to play. -->
+  <audio id="bg-music" loop preload="metadata">
+    <source src="music.mpeg" type="audio/mpeg">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Music toggle: fixed corner (♪) - click to play/pause -->
+  <button type="button" id="music-toggle" class="music-toggle" aria-label="Toggle background music" title="Play music">
+    <span class="music-icon">♪</span>
+  </button>
+
+  <!-- ========== 1. HERO SECTION ========== -->
+  <!-- EDIT: Customize heading, subheading, and hint text below -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content animate-fade-in">
+      <div class="hero-names-seal" aria-hidden="true">
+        <span class="hero-name">Yashodhaa</span>
+        <span class="hero-name-heart">♥</span>
+        <span class="hero-name">Raghunathann</span>
+      </div>
+      <h1 class="hero-title">Happy Valentine's Day, My Love ❤️</h1>
+      <p class="hero-subheading">Every day with you is my favorite love story.</p>
+      <p class="hero-hint">There's something special hidden on this page…</p>
+    </div>
+  </section>
+
+  <!-- ========== 2. ABOUT HIM SECTION ========== -->
+  <!-- EDIT: Replace paragraph below with your message about him -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title about-title">Why You Are My Everything</h2>
+      <div class="about-content scroll-reveal">
+        <p class="about-text">
+          You are the kindest soul I have ever known. Your strength lifts me up on my hardest days, and your love makes every ordinary moment feel extraordinary.
+
+Through the happy moments, the sad ones, the irritable days, and even the hardest times, you have been my constant. Thank you for standing by me through every emotion — the good, the bad, and everything in between.
+
+Thank you for being my partner, my best friend, and my greatest support. With you, I have found a home in this world.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 3. LOVE STORY TIMELINE ========== -->
+  <!-- EDIT: Update dates and milestone text for each timeline item -->
+  <section class="timeline section" id="timeline">
+    <div class="container">
+      <h2 class="section-title timeline-title">Our Love Story</h2>
+      <div class="timeline-track">
+        <article class="timeline-item scroll-reveal" style="--delay: 0">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <time class="timeline-date">The Beginning</time>
+            <h3 class="timeline-heading">When We Met</h3>
+            <p class="timeline-desc">The day our paths crossed and everything changed. I never knew you would be someone special to me forever.</p>
+          </div>
+        </article>
+        <article class="timeline-item scroll-reveal" style="--delay: 1">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <time class="timeline-date">Our First Chapter</time>
+            <h3 class="timeline-heading">First Date</h3>
+            <p class="timeline-desc">Nervous laughs, long conversations, sleepless nights, and the start of something beautiful we both felt in our hearts.</p>
+          </div>
+        </article>
+        <article class="timeline-item scroll-reveal" style="--delay: 2">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <time class="timeline-date">Forever Starts</time>
+            <h3 class="timeline-heading">Together Always</h3>
+            <p class="timeline-desc">Choosing each other every day. Building a life filled with love, trust, and countless precious memories. I thank <span class="murugan-name">Murugan</span> every day for you — for our love, our journey, and the strength to grow together through everything.</p>
+          </div>
+        </article>
+        <article class="timeline-item scroll-reveal" style="--delay: 3">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <time class="timeline-date">Today & Beyond</time>
+            <h3 class="timeline-heading">Our Journey Continues</h3>
+            <p class="timeline-desc">Every sunrise with you is a gift, and I look forward to all the adventures, laughter, and love stories still waiting for us.
+
+              There are moments when anger speaks louder than my heart, and I say things I don’t truly mean. Please know that those words come from frustration, never from a lack of love. My heart has always chosen you.
+              
+              I’m sorry for the times I let emotions lead instead of love. I promise to keep choosing you, to stand by you, and to grow with you — today, tomorrow, and always.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. PHOTO GALLERY ========== -->
+  <!-- Click any photo to flip and see the message on the back. Edit .gallery-back-message for each. -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <h2 class="section-title gallery-title">The Happy Diaries of us</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-flip-card">
+          <div class="gallery-flip-inner">
+            <div class="gallery-flip-front">
+              <img data-src-base="images/photo1" alt="Our memory 1" loading="lazy">
+              <figcaption>The First Picture of You That Reached Me</figcaption>
+            </div>
+            <div class="gallery-flip-back">
+              <p class="gallery-back-message">The start of everything. ❤️</p>
+            </div>
+          </div>
+        </figure>
+        <figure class="gallery-item gallery-flip-card">
+          <div class="gallery-flip-inner">
+            <div class="gallery-flip-front">
+              <img data-src-base="images/photo2" alt="Our memory 2" loading="lazy">
+              <figcaption>The Day We Became Us</figcaption>
+            </div>
+            <div class="gallery-flip-back">
+              <p class="gallery-back-message">On this day, my life changed from ‘me’ to ‘us’.</p>
+            </div>
+          </div>
+        </figure>
+        <figure class="gallery-item gallery-flip-card">
+          <div class="gallery-flip-inner">
+            <div class="gallery-flip-front">
+              <img data-src-base="images/photo3" alt="Our memory 3" loading="lazy">
+              <figcaption>This One Has My Heart</figcaption>
+            </div>
+            <div class="gallery-flip-back">
+              <p class="gallery-back-message">Among many photos, this is the one my heart keeps returning to.</p>
+            </div>
+          </div>
+        </figure>
+        <figure class="gallery-item gallery-flip-card">
+          <div class="gallery-flip-inner">
+            <div class="gallery-flip-front">
+              <img data-src-base="images/photo4" alt="Our memory 4" loading="lazy">
+              <figcaption>Your Birthday, a Train, and My Favorite Person</figcaption>
+            </div>
+            <div class="gallery-flip-back">
+              <p class="gallery-back-message">Celebrating you on this day made the moment unforgettable.</p>
+            </div>
+          </div>
+        </figure>
+        <figure class="gallery-item gallery-flip-card">
+          <div class="gallery-flip-inner">
+            <div class="gallery-flip-front">
+              <img data-src-base="images/photo5" alt="Our memory 5" loading="lazy">
+              <figcaption>Us, Golconda, and a Thousand Memories</figcaption>
+            </div>
+            <div class="gallery-flip-back">
+              <p class="gallery-back-message">Even within historic walls, our love beat fresh and new.</p>
+            </div>
+          </div>
+        </figure>
+        <figure class="gallery-item gallery-flip-card">
+          <div class="gallery-flip-inner">
+            <div class="gallery-flip-front">
+              <img data-src-base="images/photo6" alt="Our memory 6" loading="lazy">
+              <figcaption>Still Us. Still in Love.</figcaption>
+            </div>
+            <div class="gallery-flip-back">
+              <p class="gallery-back-message">Even as time changes, our love continues to grow calmer and deeper.</p>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. SURPRISE HINT + SECRET TRIGGER ========== -->
+  <section class="hint section" id="hint">
+    <div class="container">
+      <p class="hint-text">Love rewards those who pay attention ❤️</p>
+      <button type="button" id="secret-heart" class="secret-heart" aria-label="Discover secret" title="Something special awaits…">
+        <span aria-hidden="true">❤️</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========== 6. SECRET MESSAGE (Hidden until heart is clicked) ========== -->
+  <!-- Optional: add secret-audio.mpeg OR secret-audio.mp3 in the Valentine folder — plays when the secret is revealed. -->
+  <audio id="secret-audio" preload="none">
+    <source src="secret-audio.mpeg" type="audio/mpeg">
+    <source src="secret-audio.mp3" type="audio/mpeg">
+  </audio>
+  <!-- EDIT: Customize the secret letter text below -->
+  <section id="secret-message" class="secret-section hidden" aria-hidden="true">
+    <div class="secret-backdrop"></div>
+    <div class="secret-card">
+      <div class="secret-letter">
+        <p class="letter-greeting">Dear My Love,</p>
+        <p class="letter-body">
+          There are not enough words to tell you how much you mean to me. You are my safe place, my joy, and my greatest blessing. This little surprise is just a small way to say: I see you, I appreciate you, and I will never stop choosing you. Thank you for being you.
+        </p>
+        <p class="letter-closing">Forever Yours ❤️</p>
+      </div>
+    </div>
+    <div id="confetti-container" class="confetti-container" aria-hidden="true"></div>
+  </section>
+
+  <!-- ========== 7. FINAL MESSAGE ========== -->
+  <section class="final section" id="final">
+    <div class="floating-hearts" aria-hidden="true">
+      <span class="float-heart">❤</span>
+      <span class="float-heart">❤</span>
+      <span class="float-heart">❤</span>
+      <span class="float-heart">❤</span>
+      <span class="float-heart">❤</span>
+    </div>
+    <div class="container">
+      <p class="final-text">I choose you. Today. Tomorrow. Always.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
